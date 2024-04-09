@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Conversor Divisa</title>
+  </head>
+  <body>
+    <hr />
+    <h1>Conversor de Divisa</h1>
+    <hr />
+    <div class="container">
+      <div class="caja">
+        <h3>PESOS CLP</h3>
+
+        <input
+          class="form-control"
+          id="pesosCl"
+          type="number"
+          placeholder="Ingrese monto "
+          aria-label="default input example"
+        />
+        <div class="divisa">
+          <p>Moneda a convertir:</p>
+
+          <select
+            class="form-select"
+            id="divisas"
+            aria-label="Default select example"
+          >
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+          </select>
+        </div>
+        <button type="button" id="buscarDivisa" class="btn btn-info">
+          Buscar
+        </button>
+        <p>Resultado: <span id="resultado"></span></p>
+      </div>
+      <div class="grafic">
+        <canvas class="graficosDiv"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./assets/js/./script.js"></script>
+  </body>
+</html>
